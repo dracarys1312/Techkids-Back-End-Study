@@ -28,7 +28,6 @@ myAngular.config(function($stateProvider, $urlRouterProvider){
     templateUrl: "templates/about-us.html"
   });
 
-  // $locationProvider.html5Mode(true);
 });
 
 myAngular.directive("lx", [function(){
@@ -40,18 +39,5 @@ myAngular.directive("lx", [function(){
     },
     templateUrl: "templates/lx.html",
     controller: "LXController"
-  }
-}]);
-
-
-myAngular.directive("navbar", [function(){
-  return {
-    restrict: "E",
-    scope: {
-      page: "=",
-      size: "="
-    },
-    templateUrl: "templates/navbar.html",
-    controller: "NavbarController"
   }
 }]);
